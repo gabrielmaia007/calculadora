@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="blur blur-1"></div>
+        <div class="blur blur-2"></div>
+        <div class="blur blur-3"></div>
+    </div>
+
+    <main class="calculadora">
+
+        <div class="topo">
+            <div>
+                <span class="indicador"></span>
+                <span>CALCULADORA PRO</span>
+            </div>
+
+            <span class="versao">v1.0</span>
+        </div>
+
+        <div class="display-area">
+
+            <div class="historico" id="historico"></div>
+
+            <input type="text" id="display" value="0" readonly>
+
+        </div>
+
+        <div class="botoes">
+
+            <button class="funcao" data-key="Escape" onclick="limpar()">
+                AC
+            </button>
+
+            <button class="funcao" data-key="Backspace" onclick="apagar()">
+                ⌫
+            </button>
+
+            <button class="funcao" data-key="%" onclick="porcentagem()">
+                %
+            </button>
+
+            <button class="operador" data-key="/">
+                ÷
+            </button>
+
+
+            <button data-key="7">7</button>
+            <button data-key="8">8</button>
+            <button data-key="9">9</button>
+            <button class="operador" data-key="*">×</button>
+
+
+            <button data-key="4">4</button>
+            <button data-key="5">5</button>
+            <button data-key="6">6</button>
+            <button class="operador" data-key="-">−</button>
+
+
+            <button data-key="1">1</button>
+            <button data-key="2">2</button>
+            <button data-key="3">3</button>
+            <button class="operador" data-key="+">+</button>
+
+
+            <button class="zero" data-key="0">0</button>
+            <button data-key=".">.</button>
+
+            <button class="igual" data-key="Enter">
+                =
+            </button>
+
+        </div>
+
+        <div class="rodape">
+            <span>⌨ Use o teclado para calcular</span>
+            <span>•</span>
+            <span>HTML • CSS • JS</span>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
